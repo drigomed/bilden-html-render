@@ -1,0 +1,14 @@
+{
+  "extension": "bilden-html",
+  "mode": "compile",
+  "deploy": "desktop",
+	"desktopConfig": {
+		"destination": "C:\\Users\\rmart\\OneDrive\\Documentos\\Qlik\\Sense\\Extensions\\bilden-bundle"
+	},
+  "output": "./dist",
+  "compile": {
+    "entry": "./src/index.js",
+    "qext": "./src/index.qext",
+    "static": "./static"
+  }
+}

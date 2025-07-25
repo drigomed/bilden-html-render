@@ -1,0 +1,30 @@
+{
+  "name": "bilden-html",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "qext-scripts": "qext-scripts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "after-work.js": "4.3.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-istanbul": "^5.0.1",
+    "enigma.js": "^2.3.0",
+    "eslint": "5.5.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-mocha": "5.2.0",
+    "eslint-plugin-protractor": "1.41.0",
+    "eslint-plugin-react": "7.11.1",
+    "jsdom": "^12.0.0",
+    "protractor": "^5.4.3",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "qext-scripts": "^2.2.0"
+  }
+}

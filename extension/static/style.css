@@ -1,0 +1,62 @@
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+  }
+  
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+  }
+  
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  span.control_prev, span.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #9c9c9c;;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+  
+  span.control_prev:hover, span.control_next:hover {
+    opacity: 0.6;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  span.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  span.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+
+  div[tid=about] div[tid=aboutlogo] {
+    background: url(http://central.bildennegocios.com.br/static/img/logonome.PNG);
+    height: 60px;
+    margin-left: 10%;
+    margin-top: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
