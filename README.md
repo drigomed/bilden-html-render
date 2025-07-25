@@ -1,4 +1,4 @@
-> 📄 This content is in Portuguese. For the English version, [click here](./README.en.md).
+> 📄 This content is in Portuguese. For the English version, [click here](./readme.en.md).
 
 # 🧩 Bilden HTML Render
 
