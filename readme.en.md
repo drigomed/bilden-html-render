@@ -158,3 +158,4 @@ Open an [issue on GitHub](https://github.com/drigomed/bilden-htmlrender/issues) 
 
 - [LinkedIn - Rodrigo Martins](https://www.linkedin.com/in/drigomed)  
 - [https://bildennegocios.com/](https://bildennegocios.com/)
+
