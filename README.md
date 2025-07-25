@@ -18,13 +18,17 @@
 
 ## 🛠️ Como funciona o template
 
-A extensão utiliza **três blocos principais de HTML** para montar o conteúdo final:
+Além das dimensões e medidas, a extensão utiliza **três blocos principais de HTML**  e **um bloco CSS** para montar o conteúdo final:
 
 | Bloco              | Descrição |
 |--------------------|-----------|
 | **HTML Preliminar** | Renderizado **uma única vez** antes dos elementos de dados. Ideal para abertura de estruturas, como `<ul>`. |
 | **HTML Template**   | Renderizado **uma vez para cada linha do hipercubo**. Usa placeholders por posição para referenciar dimensões e medidas. |
 | **HTML Posterior**  | Renderizado **uma única vez** após os dados. Ideal para fechamento de estruturas, como `</ul>`. |
+| **CSS**             | Seu conteúdo é encapsulado em uma tag `<style>` e anexado ao `<head>` da página. |
+
+![Configuracao1](img/config1.png)
+![Configuracao2](img/config2.png)
 
 ### 📌 Exemplo de uso básico
 
@@ -69,26 +73,13 @@ Esse modo é útil para incorporar conteúdos diretamente no painel do Qlik, com
 
 ---
 
-## 🎨 CSS Customizado
-
-A extensão possui uma área para inserir CSS. O conteúdo será automaticamente incluído dentro de uma tag `<style>` no `<head>` da página.
-
-```css
-.lista-clientes li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-```
-
----
-
 ## 🎠 Modo Carrossel
 
 Quando a opção **"Tamanho automático"** é ativada, cada elemento ocupa **100% da área do componente**, criando um carrossel. Configurações disponíveis:
 
 | Opção | Descrição |
 |-------|-----------|
-| **Exibir como carrossel** | Ativa ou desativa o modo carrossel. |
+| **Exibir como carrossel** | Ativa ou desativa o modo carrossel. Caso desativado os itens são renderizados um abaixo do outro. |
 | **Animar carrossel** | Alterna automaticamente os itens. |
 | **Intervalo da animação** | Tempo de exibição de cada item (em ms). |
 | **Velocidade da animação** | Duração da transição entre itens (em ms). |
@@ -105,20 +96,23 @@ A extensão permite a injeção direta de JavaScript customizado. Além disso, a
 - Execução de qualquer funcionalidade suportada pela API do Qlik.
 
 Um exemplo de utilização muito comum nesse caso é utilizar uma função que, ao ser clicada, atribui um valor a uma variável e exibe um pop-up que incorpora outra aba do aplicativo. Nessa outra aba, todos os componentes dependem dessa variável. Essa estrutura permite criar, por exemplo, uma visão com uma grid de produtos, e ao clicar em um dos produtos uma visão de **detalhe de produto** é carregada no pop-up, exibindo apenas informações do produto selecionado.
+
 ---
 ## 🧑‍💻 Exemplos
+> (todos os dados desses apps são fictícios!)
 
 Dashboard Comercial:
 - À esquerda uma listagem de produtos ordenados por faturamento, onde o hover no card apresenta mais informações, e o clique exibe um pop-up de detalhamento do produto
 - No meio uma listagem dos vendedores com maiores margens. O hover apresenta mais informações e botões de ação (whatsapp, e-mail e Skype)
 - À direita um carrossel com dados das filiais, que passa automaticamente a cada 5 segundos
 
+![ExemploComercial](img/exemplo1.gif)
 
-
-Consulta de Colaboradores RH (todos os dados desse app são fictícios!)
+Consulta de Colaboradores RH
 - Listagem de funcionários de uma empresa, o clique em uma das fotos carrega o painel do funcionário em um pop-up (uma outra aba).
 - Nessa outra aba o HTML Render foi utilizado para apresentar os treinamentos e promoções
 
+![ExemploRH](img/exemplo2.gif)
 
 ---
 ## 📂 Instalação
