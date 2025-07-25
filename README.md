@@ -1,3 +1,5 @@
+> 📄 This content is in Portuguese. For the English version, [click here](./README.en.md).
+
 # 🧩 Bilden HTML Render
 
 **Bilden HTML Render** é uma extensão Qlik Sense que permite ao desenvolvedor definir um template HTML customizado para renderização de cada linha de dados do hipercubo. Ideal para a criação de visualizações livres, layouts criativos, componentes de UI personalizados ou mesmo integrações com bibliotecas externas de visualização, essa extensão oferece total controle sobre o conteúdo HTML gerado a partir dos dados. 
